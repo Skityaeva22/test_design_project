@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const nameModel = ref('')
 const phoneModel = ref('')
 </script>

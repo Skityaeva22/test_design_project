@@ -22,6 +22,7 @@ export default {
       CalleoTrial: ['CalleoTrial'],
       Gilroy: ['Gilroy'],
     },
+    /** Размеры экранов по ширине */
     screens: {
       little: { max: '480px' },
       smPre: { max: '650px' },
