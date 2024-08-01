@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["vite/client"]
+  },
+  "include": [
+    "package.json",
+    "vite.config.ts",
+    "playwright-ct.config.ts",
+    "playwright.config.ts"
+  ]
+}

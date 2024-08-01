@@ -1,0 +1,31 @@
+$--colors: (
+    "primary": (
+      "base": #1A5CFF,
+      "light-3": #4F81FF,
+      "light-9" : #ECF5FF,
+    ),
+    "warning": (
+      "base": #FD8229,
+      "light-3": #FFA41B,
+      "light-5": #F2D09D,
+      "light-9": #FCF6EC,
+    ),
+    "success": (
+      "base": #26D060,
+    ),
+    "danger": (
+      "base": #E73C47
+    ),
+  );
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: $--colors,
+  $common-component-size: (
+    "default": 37px,
+  ),
+  $button: (
+    "hover-bg-color": none,
+    "text-color": theme('colors.gray-dark'),
+    "border-color": theme('colors.gray-light')
+  ),
+);

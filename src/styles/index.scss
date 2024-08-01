@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'CalleoTrial';
+  font-weight: 200;
+  src: url('../assets/fonts/Calleo-Trial/Calleo-Trial-ExtraLight-BF64af57cf23c70.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CalleoTrial';
+  font-weight: 400;
+  src: url('../assets/fonts/Calleo-Trial/Calleo-Trial-Regular-BF64af57cf2e838.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CalleoTrial';
+  font-weight: 500;
+  src: url('../assets/fonts/Calleo-Trial/Calleo-Trial-SemiBold-BF64af57cf07662.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CalleoTrial';
+  font-weight: 700;
+  src: url('../assets/fonts/Calleo-Trial/Calleo-Trial-Bold-BF64af57cf0057d.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CalleoTrial';
+  font-weight: 700;
+  src: url('../assets/fonts/Calleo-Trial/Calleo-Trial-Bold-BF64af57cf0057d.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  src: url('../assets/fonts/Gilroy-Medium.woff') format('woff');
+}
+
+body {
+  font-family: "CalleoTrial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  word-wrap: break-word;
+  background-color: var(--el-bg-color);
+  color: #000;
+}
+
+footer {
+  color: white;
+}
+
+:root {
+  --el-color-primary: rgba(26, 92, 255, 1) !important;
+}
