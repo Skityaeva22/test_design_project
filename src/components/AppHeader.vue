@@ -2,53 +2,52 @@
 import LogoIcon from '@/assets/icons/LogoIcon.vue'
 import LoginIcon from '@/assets/icons/LoginIcon.vue'
 import SearchIcon from '@/assets/icons/SearchIcon.vue'
-
 </script>
 
 <template>
-  <el-menu
+  <ElMenu
     mode="horizontal"
     :ellipsis="false"
-    class="bg-yellow !border-none"
+    class="!border-none bg-yellow"
   >
     <!-- Первый блок -->
-    <el-menu-item index="0">
+    <ElMenuItem index="0">
       <LogoIcon class="mr-2" />
-      <span class="font-bold text-[18px]/[24px]">StartupLand</span>
-    </el-menu-item>
+      <span class="text-[18px]/[24px] font-bold">StartupLand</span>
+    </ElMenuItem>
     <div class="flex-grow" />
     <!-- Второй блок -->
-     <div class="flex items-center gap-2.5">
-        <el-menu-item>
-          <span class="text-main-text-color">Home</span>
-        </el-menu-item>
-        <el-sub-menu index="1">
-          <template #title>
-            <span class="text-main-text-color">Adversite</span>
-          </template>
-        </el-sub-menu>
-        <el-sub-menu index="2">
-          <template #title>
-            <span class="text-main-text-color">Supports</span>
-          </template>
-        </el-sub-menu>
-        <el-menu-item>
-          <span class="text-main-text-color">About</span>
-        </el-menu-item>
-        <SearchIcon />
-     </div>
+    <div class="flex items-center gap-2.5">
+      <ElMenuItem>
+        <span class="text-main-text-color">Home</span>
+      </ElMenuItem>
+      <ElSubMenu index="1">
+        <template #title>
+          <span class="text-main-text-color">Adversite</span>
+        </template>
+      </ElSubMenu>
+      <ElSubMenu index="2">
+        <template #title>
+          <span class="text-main-text-color">Supports</span>
+        </template>
+      </ElSubMenu>
+      <ElMenuItem>
+        <span class="text-main-text-color">About</span>
+      </ElMenuItem>
+      <SearchIcon />
+    </div>
     <div class="flex-grow" />
     <!-- Третий блок -->
     <div class="flex items-center gap-2.5">
-      <button class="w-fit h-[45px]">
+      <button class="h-[45px] w-fit">
         <div class="flex items-center gap-2">
           <LoginIcon />
-          <span class="text-main-text-color text-[16px]/[33px] font-medium">Login</span>
+          <span class="text-[16px]/[33px] font-medium text-main-text-color">Login</span>
         </div>
       </button>
-      <button class="w-[124px] h-[45px] bg-[#FFF0D7] rounded-[5px]">
-        <span class="text-[#E5A740] text-[16px]/[33px] font-bold">Get Started</span>
+      <button class="h-[45px] w-[124px] rounded-[5px] bg-[#FFF0D7]">
+        <span class="text-[16px]/[33px] font-bold text-[#E5A740]">Get Started</span>
       </button>
     </div>
-  </el-menu>
+  </ElMenu>
 </template>
