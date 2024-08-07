@@ -29,3 +29,21 @@ $--colors: (
     "border-color": theme('colors.gray-light')
   ),
 );
+
+.el-header {
+  display: flex;
+  justify-content: center;
+  background: #FFFCF7;
+}
+
+.el-menu--horizontal.el-menu {
+  width: 1300px;
+}
+
+.el-menu--horizontal > .el-menu-item {
+  color: #02073E;
+}
+
+.el-sub-menu .el-sub-menu__icon-arrow {
+  color: #02073E;
+}

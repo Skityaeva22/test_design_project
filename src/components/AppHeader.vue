@@ -1,32 +1,54 @@
 <script setup lang="ts">
-const handleScrollToFooter = function (): void {
-  window.scrollTo({
-    top: 100000,
-    behavior: 'smooth',
-  })
-}
+import LogoIcon from '@/assets/icons/LogoIcon.vue'
+import LoginIcon from '@/assets/icons/LoginIcon.vue'
+import SearchIcon from '@/assets/icons/SearchIcon.vue'
+
 </script>
 
 <template>
-  <div class="mx-32 flex h-[100px] items-center justify-between text-font-color md:mb-24 md:h-auto md:flex-col md:gap-14">
-    <nav class="flex w-1/2 justify-between font-Gilroy text-xl font-medium md:flex-col md:gap-3.5">
-      <RouterLink class="md:self-center" to="/">
-        Информация
-      </RouterLink>
-      <RouterLink class="text-nowrap md:self-center" to="/bot">
-        Чат-бот
-      </RouterLink>
-      <div class="cursor-pointer md:self-center" @click="handleScrollToFooter()">
-        Контакты
-      </div>
-    </nav>
-    <div class="flex gap-5 md:hidden">
-      <button>
-        <img src="@/assets/images/email_button.svg" alt="email button">
+  <el-menu
+    mode="horizontal"
+    :ellipsis="false"
+    class="bg-yellow !border-none"
+  >
+    <!-- Первый блок -->
+    <el-menu-item index="0">
+      <LogoIcon class="mr-2" />
+      <span class="font-bold text-[18px]/[24px]">StartupLand</span>
+    </el-menu-item>
+    <div class="flex-grow" />
+    <!-- Второй блок -->
+     <div class="flex items-center gap-2.5">
+        <el-menu-item>
+          <span class="text-main-text-color">Home</span>
+        </el-menu-item>
+        <el-sub-menu index="1">
+          <template #title>
+            <span class="text-main-text-color">Adversite</span>
+          </template>
+        </el-sub-menu>
+        <el-sub-menu index="2">
+          <template #title>
+            <span class="text-main-text-color">Supports</span>
+          </template>
+        </el-sub-menu>
+        <el-menu-item>
+          <span class="text-main-text-color">About</span>
+        </el-menu-item>
+        <SearchIcon />
+     </div>
+    <div class="flex-grow" />
+    <!-- Третий блок -->
+    <div class="flex items-center gap-2.5">
+      <button class="w-fit h-[45px]">
+        <div class="flex items-center gap-2">
+          <LoginIcon />
+          <span class="text-main-text-color text-[16px]/[33px] font-medium">Login</span>
+        </div>
       </button>
-      <button>
-        <img src="@/assets/images/telegram_image.svg" alt="email button">
+      <button class="w-[124px] h-[45px] bg-[#FFF0D7] rounded-[5px]">
+        <span class="text-[#E5A740] text-[16px]/[33px] font-bold">Get Started</span>
       </button>
     </div>
-  </div>
+  </el-menu>
 </template>

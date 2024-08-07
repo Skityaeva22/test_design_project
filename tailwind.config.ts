@@ -17,6 +17,9 @@ export default {
       'light-blue': '#E3F3FF',
       'bot-light-grey': '#FAFBFD',
       'input-text': '#AFB0B1',
+      'yellow': '#FFFCF7',
+      'text-main': '#02073E',
+      'main-text-color': '#0F2137',
     },
     fontFamily: {
       CalleoTrial: ['CalleoTrial'],
