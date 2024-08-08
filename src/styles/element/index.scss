@@ -23,11 +23,6 @@ $--colors: (
   $common-component-size: (
     "default": 37px,
   ),
-  $button: (
-    "hover-bg-color": none,
-    "text-color": theme('colors.gray-dark'),
-    "border-color": theme('colors.gray-light')
-  ),
 );
 
 .el-header {
